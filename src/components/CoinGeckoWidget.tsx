@@ -10,14 +10,14 @@ const CoinGeckoWidget = () => {
         strategy="lazyOnload"
       />
       {/* The widget itself */}
-      <gecko-coin-price-marquee-widget
+      {/* <gecko-coin-price-marquee-widget
         locale="en"
         outlined="true"
         coin-ids="bitcoin,ethereum"
         initial-currency="usd"
         dark-mode="true"
         transparent-background="true"
-      ></gecko-coin-price-marquee-widget>
+      ></gecko-coin-price-marquee-widget> */}
     </div>
   );
 };
