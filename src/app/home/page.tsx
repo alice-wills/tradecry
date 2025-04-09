@@ -11,7 +11,7 @@ import { redirect } from "next/navigation";
 const HomePage = () => {
   const [showLetter, setShowLetter] = useState(true);
   const { isSignedIn, user, isLoaded } = useUser();
-  // const [showDropDownMenu,setShowDropDownMenu]= useState(false)
+
   if (!isLoaded) {
     return <Loader2 className="mx-auto my-6 animate-spin" />;
   }

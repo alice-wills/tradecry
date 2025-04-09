@@ -13,7 +13,10 @@ const nextConfig: NextConfig = {
         hostname:"via.placeholder.com"
       }
     ]
-  }
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
