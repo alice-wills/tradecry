@@ -1,8 +1,5 @@
 
 
-import HeadSection from '@/components/register/HeadSection'
-import FooterSection from '@/components/service/FooterSection'
-import React from 'react'
 import { SignUp } from "@clerk/nextjs";
 
 const RegisterPage = () => {

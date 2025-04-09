@@ -1,5 +1,4 @@
-import HeadSection from "@/components/login/HeadSection";
-import FooterSection from "@/components/service/FooterSection";
+
 import { SignIn } from "@clerk/nextjs";
 
 const LoginPage = () => {
