@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 import React, { useState } from "react";
 import { UserButton, useUser } from "@clerk/nextjs";
 import { Loader2 } from "lucide-react";
 import { redirect } from "next/navigation";
+import HomeCoinGecko from "@/components/HomeCoinGecko";
 
 const HomePage = () => {
   const [showLetter, setShowLetter] = useState(true);
@@ -418,17 +418,7 @@ const HomePage = () => {
               </div>
             </div>
           </section>
-
-          <div className="overflow-y-hidden">
-            <Script src="https://widgets.coingecko.com/gecko-coin-market-ticker-list-widget.js"></Script>
-            <gecko-coin-market-ticker-list-widget
-              locale="en"
-              dark-mode="true"
-              outlined="true"
-              initial-currency="usd"
-              vce-ready=""
-            ></gecko-coin-market-ticker-list-widget>
-          </div>
+          <HomeCoinGecko/>
         </main>
       </div>
     </div>
