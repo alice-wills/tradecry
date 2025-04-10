@@ -41,10 +41,10 @@ const FooterSection = () => {
                           <Link href="#"><span className="padding_left_10"><i className="fa fa-map-marker" aria-hidden="true"></i></span>Location</Link>
                        </li>
                        <li>
-                          <Link href="#"><span className="padding_left_10"><i className="fa fa-phone" aria-hidden="true"></i></span>+01 1234567890</Link>
+                          <Link href="#"><span className="padding_left_10"><i className="fa fa-phone" aria-hidden="true"></i></span>+01 5618551885</Link>
                        </li>
                        <li>
-                          <Link href="#"><span className="padding_left_10"><i className="fa fa-envelope" aria-hidden="true"></i></span>admin@cryptixmarket.com</Link>
+                          <Link href="#"><span className="padding_left_10"><i className="fa fa-envelope" aria-hidden="true"></i></span>admin@cryptixinvestment.shop</Link>
                        </li>
                     </ul>
                  </div>
