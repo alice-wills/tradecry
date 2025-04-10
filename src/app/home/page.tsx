@@ -276,7 +276,7 @@ const HomePage = () => {
             </div>
             <div className="flex flex-wrap items-start justify-end -mb-3">
               <Link
-                href="https://cryptixmarket.com/deposit"
+                href=""
                 className="inline-flex px-5 py-3 text-blue-600 hover:text-blue-700 focus:text-blue-700 hover:bg-blue-100 focus:bg-blue-100 border border-blue-600 rounded-md mb-3"
               >
                 <svg
@@ -296,7 +296,7 @@ const HomePage = () => {
                 Make deposit
               </Link>
               <Link
-                href="https://cryptixmarket.com/wallet"
+                href=""
                 className="inline-flex px-5 py-3 text-white bg-blue-600 hover:bg-purple-700 focus:bg-blue-700 rounded-md ml-6 mb-3"
               >
                 <svg
