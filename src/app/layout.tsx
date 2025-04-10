@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TradeCryptix",
+  title: "Cryptix Investment",
   description: "Your one stop shop for all Crypto trade.",
 };
 

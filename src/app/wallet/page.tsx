@@ -1,12 +1,12 @@
 "use client";
 
+import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
 const WalletPage = () => {
   const [showLetter, setShowLetter] = useState(true);
-  const [showDropDownMenu, setShowDropDownMenu] = useState(false);
   const [showModal, setShowModal] = useState(false);
   return (
     <div className="flex bg-gray-100 min-h-screen">
@@ -20,7 +20,7 @@ const WalletPage = () => {
             style={{ display: showLetter ? "block" : "none" }}
           >
             <Image
-              src="/logo22.png"
+              src="/logo-transparent.png"
               className="h-16"
               alt=""
               width={100}
@@ -208,7 +208,7 @@ const WalletPage = () => {
               className="py-2 pl-10 pr-4 w-full border-4 border-transparent placeholder-gray-400 focus:bg-gray-50 rounded-lg"
             />
           </div>
-          <div className="flex flex-shrink-0 items-center ml-auto">
+          {/* <div className="flex flex-shrink-0 items-center ml-auto">
             <button
               className="relative inline-flex items-center p-2 hover:bg-gray-100 focus:bg-gray-100 rounded-lg"
               onClick={() => setShowDropDownMenu(!showDropDownMenu)}
@@ -277,6 +277,18 @@ const WalletPage = () => {
                 </svg>
               </Link>
             </div>
+          </div> */}
+          <div className="shrink-0">
+            <UserButton
+              appearance={{
+                elements: {
+                  avatarBox: {
+                    width: 35,
+                    height: 35,
+                  },
+                },
+              }}
+            />
           </div>
         </header>
         <main className="p-6 sm:p-10 space-y-6">
