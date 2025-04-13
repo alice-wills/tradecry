@@ -18,8 +18,8 @@ const HomePage = () => {
   const [showLetter, setShowLetter] = useState(true);
   const { isSignedIn, user, isLoaded } = useUser();
 
-  const userDeposit = (user?.publicMetadata as UserPublicMetadata).deposit
-  const userProfit = (user?.publicMetadata as UserPublicMetadata).profit
+  const userDeposit = (user?.publicMetadata as UserPublicMetadata)?.deposit 
+  const userProfit = (user?.publicMetadata as UserPublicMetadata)?.profit 
 
   if (!isLoaded) {
     return <Loader2 className="mx-auto my-6 animate-spin" />;
@@ -345,7 +345,7 @@ const HomePage = () => {
                 </svg>
               </div>
               <div>
-                <span className="block text-2xl font-bold">€{userDeposit || ""}</span>
+                <span className="block text-2xl font-bold">€{userDeposit}</span>
                 <span className="block text-gray-500">Deposit</span>
               </div>
             </div>
@@ -390,7 +390,7 @@ const HomePage = () => {
               </div>
 
               <div>
-                <span className="inline-block text-2xl font-bold">€{userProfit || ""}</span>
+                <span className="inline-block text-2xl font-bold">€{userProfit}</span>
                 <span className="inline-block text-xl text-gray-500 font-semibold"></span>
                 <span className="block text-gray-500">Total Profit</span>
               </div>
