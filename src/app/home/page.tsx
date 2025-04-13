@@ -195,73 +195,6 @@ const HomePage = () => {
               className="w-full py-2 pl-10 pr-4 border-4 border-transparent placeholder-gray-400 focus:bg-gray-50 rounded-lg text-sm sm:text-base"
             />
           </div>
-          {/* <div className="flex flex-shrink-0 items-center ml-auto">
-            <button onClick={()=>setShowDropDownMenu(!showDropDownMenu)} className="relative inline-flex items-center p-2 hover:bg-gray-100 focus:bg-gray-100 rounded-lg">
-              <span className="sr-only">User Menu</span>
-              <div className="hidden md:flex md:flex-col md:items-end md:leading-tight">
-                <span className="font-semibold">Sadoyin</span>
-              </div>
-              <span className="h-12 w-12 ml-2 sm:ml-3 mr-2 bg-gray-100 rounded-full overflow-hidden">
-                <Image
-                  src="https://via.placeholder.com/150"
-                  alt="user profile photo"
-                  className="h-full w-full object-cover"
-                  width={100}
-                  height={100}
-                />
-              </span>
-              <svg
-                aria-hidden="true"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="hidden sm:block h-6 w-6 text-gray-300"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-            </button>
-            <div
-              className="absolute top-20 bg-white border rounded-md p-2 w-56"
-              style={{display: showDropDownMenu ? "block":"none"}}
-            >
-              <div className="">
-                <Link
-                  href="https://cryptixmarket.com/profile"
-                  className="p-2 hover:bg-blue-100 cursor-pointer"
-                >
-                  Profile
-                </Link>
-              </div>
-              <Link href="#" className="p-2 hover:bg-blue-100 cursor-pointer">
-                Logout
-              </Link>
-            </div>
-            <div className="border-l pl-3 ml-3 space-x-1">
-              <Link
-                href="#"
-                className="relative p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:bg-gray-100 focus:text-gray-600 rounded-full"
-              >
-                <span className="sr-only">Log out</span>
-                <svg
-                  aria-hidden="true"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="h-6 w-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                  ></path>
-                </svg>
-              </Link>
-            </div>
-          </div> */}
           <div className="shrink-0">
             <UserButton
               appearance={{
@@ -345,7 +278,7 @@ const HomePage = () => {
                 </svg>
               </div>
               <div>
-                <span className="block text-2xl font-bold">€{userDeposit}</span>
+                <span className="block text-2xl font-bold">€{userDeposit ? userDeposit : 0}</span>
                 <span className="block text-gray-500">Deposit</span>
               </div>
             </div>
@@ -390,7 +323,7 @@ const HomePage = () => {
               </div>
 
               <div>
-                <span className="inline-block text-2xl font-bold">€{userProfit}</span>
+                <span className="inline-block text-2xl font-bold">€{userProfit ? userProfit : 0}</span>
                 <span className="inline-block text-xl text-gray-500 font-semibold"></span>
                 <span className="block text-gray-500">Total Profit</span>
               </div>
