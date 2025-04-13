@@ -11,6 +11,7 @@ import HomeCoinGecko from "@/components/HomeCoinGecko";
 interface UserPublicMetadata {
   deposit?: string; // Add other properties you expect in publicMetadata
   profit?:string;
+  withdrawal?:string;
 }
 
 
@@ -20,6 +21,7 @@ const HomePage = () => {
 
   const userDeposit = (user?.publicMetadata as UserPublicMetadata)?.deposit 
   const userProfit = (user?.publicMetadata as UserPublicMetadata)?.profit 
+  const userWithdrawal = (user?.publicMetadata as UserPublicMetadata)?.withdrawal 
 
   if (!isLoaded) {
     return <Loader2 className="mx-auto my-6 animate-spin" />;
@@ -300,7 +302,7 @@ const HomePage = () => {
                 </svg>
               </div>
               <div>
-                <span className="block text-2xl font-bold">€0</span>
+                <span className="block text-2xl font-bold">€{userWithdrawal ? userWithdrawal : "0"}</span>
                 <span className="block text-gray-500">Withdrawal</span>
               </div>
             </div>
