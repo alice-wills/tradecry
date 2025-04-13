@@ -1,6 +1,6 @@
 
 import CarouselItem from "./CarouselItem";
-// import CoinGeckoWidget from "./CoinGeckoWidget";
+import CoinGeckoWidget from "./CoinGeckoWidget";
 import Navbar from "./Navbar";
 
 const HeadSection = () => {
@@ -8,7 +8,7 @@ const HeadSection = () => {
     <div className="bg-[url(/banner-bg.png)] w-full h-full ">
       <div className="">
         <Navbar/>
-        {/* <CoinGeckoWidget/> */}
+        <CoinGeckoWidget/>
         <CarouselItem/>
       </div>
     </div>
