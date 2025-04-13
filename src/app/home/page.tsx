@@ -278,7 +278,7 @@ const HomePage = () => {
                 </svg>
               </div>
               <div>
-                <span className="block text-2xl font-bold">€{userDeposit ? userDeposit : 0}</span>
+                <span className="block text-2xl font-bold">€{userDeposit ? userDeposit : "0"}</span>
                 <span className="block text-gray-500">Deposit</span>
               </div>
             </div>
@@ -323,7 +323,7 @@ const HomePage = () => {
               </div>
 
               <div>
-                <span className="inline-block text-2xl font-bold">€{userProfit ? userProfit : 0}</span>
+                <span className="inline-block text-2xl font-bold">€{userProfit ? userProfit : "0"}</span>
                 <span className="inline-block text-xl text-gray-500 font-semibold"></span>
                 <span className="block text-gray-500">Total Profit</span>
               </div>
