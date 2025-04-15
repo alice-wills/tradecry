@@ -44,7 +44,7 @@ const FooterSection = () => {
                           <Link href="#"><span className="padding_left_10"><i className="fa fa-phone" aria-hidden="true"></i></span>+01 5618551885</Link>
                        </li>
                        <li>
-                          <Link href="#"><span className="padding_left_10"><i className="fa fa-envelope" aria-hidden="true"></i></span>admin@cryptixinvestment.shop</Link>
+                          <Link href="#"><span className="padding_left_10"><i className="fa fa-envelope" aria-hidden="true"></i></span>alicyawills254@gmail.com</Link>
                        </li>
                     </ul>
                  </div>
