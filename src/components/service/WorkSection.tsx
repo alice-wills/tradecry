@@ -9,7 +9,7 @@ const WorkSection = () => {
           <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex-[0_0_100%] max-w-full">
             <div className="flex w-[55%] mx-auto text-center">
               <hr className="border-[5px] border-[#2596be] w-[100px] bg-[#2596be] h-[10px] rounded-[10px] mt-[20px]" />
-              <h1 className="text-[40px] font-bold text-[#232222]">
+              <h1 className="text-[40px] font-bold text-[#232222] dark:text-white">
                 How It Work
               </h1>
               <hr className="border-[5px] border-[#2596be] w-[100px] bg-[#2596be] h-[10px] rounded-[10px] mt-[20px]" />

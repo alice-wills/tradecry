@@ -8,7 +8,7 @@ const TeamSection2 = () => {
         {/* <!-- <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Team</h2> --> */}
         <div className="flex w-[62%] text-center mx-auto mb-7">
           <hr className="border-[5px] border-[#2596be] w-[100px] bg-[#2596be] h-[10px] rounded-[10px] mt-[20px]" />
-          <h1 className="text-[40px] font-bold text-[#232222]">
+          <h1 className="text-[40px] font-bold text-[#232222] dark:text-white">
             Excellent Team Workers
           </h1>
           <hr className="border-[5px] border-[#2596be] w-[100px] bg-[#2596be] h-[10px] rounded-[10px] mt-[20px]" />
