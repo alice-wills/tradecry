@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const ClientSection = () => {
   return (
-    <div className="w-full float-left pb-[170px] pt-[100px]" >
+    <div className="w-full float-left pb-[170px] pt-[100px] bg-white" >
          <div className="container pr-[15px] pl-[15px] mr-auto ml-auto mb-6">
             <div id="carouselExampleIndicators" className="relative" data-ride="carousel">
                <ol className="absolute bottom-[-80px] right-0 left-0 z-[15] flex justify-center pl-0 mr-[15%] ml-[15%] list-none">
@@ -13,11 +13,11 @@ const ClientSection = () => {
                </ol>
                <div className="relative w-full overflow-hidden">
                   <div className="relative w-full hidden">
-                     <h1 className="w-full float-left text-[40px] text-[#2b2a2a] font-bold text-center pb-0">What Is Says Our Clients</h1>
+                     <h1 className="w-full float-left text-[40px] text-[#2b2a2a] font-bold text-center pb-0">What Our Client Say</h1>
                      <p className="w-full float-left text-[16px] text-[#6b6a6a] text-center m-0">eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
                      <div className="w-full text-center pt-[40px] inline-block"><Image alt="" width={100} height={100} src="/client-imag.png"/></div>
                      <h3 className="w-full text-[20px] text-[#000000] text-center font-bold pt-[20px]">Magna Aliqua.</h3>
-                     <p className="w-[85%] text-[16px] text-[#000000] text-center m-[0_auto]"> Investing with tradecrptix.com has been one of the best decisions I have ever made. Their team is knowledgeable, transparent, and truly has my best interests at heart. I have seen consistent returns and feel secure knowing my money is in good hands.</p>
+                     <p className="w-[85%] text-[16px] y-[#000000] text-center m-[0_auto]"> Investing with tradecrptix.com has been one of the best decisions I have ever made. Their team is knowledgeable, transparent, and truly has my best interests at heart. I have seen consistent returns and feel secure knowing my money is in good hands.</p>
                   </div>
                   <div className="relative w-full hidden">
                      <h1 className="w-full float-left text-[40px] text-[#2b2a2a] font-bold text-center pb-0">What Is Says Our Clients</h1>

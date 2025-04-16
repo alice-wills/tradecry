@@ -21,9 +21,10 @@ const WorkSection = () => {
           </div>
         </div>
         <div className="w-full float-left pt-[50px]">
-          <div className="flex flex-wrap mr-[-15px] ml-[-15px]">
-            <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex max-w-[33%]">
-              <div className="w-full bg-[#dddada] h-auto px-[20px] py-[40px]">
+        {/* grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 */}
+          <div className="flex flex-col gap-4 w-full md:flex-row lg:flex-row">
+            <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex">
+              <div className="w-full bg-[rgb(221,218,218)] h-auto px-[20px] py-[40px]">
                 <div className="text-center items-center justify-center flex w-full">
                   <Image src="/img-1.png" alt="" width={100} height={100} />
                 </div>
@@ -36,7 +37,7 @@ const WorkSection = () => {
                 </p>
               </div>
             </div>
-            <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex max-w-[33%]">
+            <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex">
               <div className="w-full bg-[#2396be] h-auto px-[20px] py-[40px]">
                 <div className="text-center items-center justify-center flex w-full">
                   <Image src="/img-2.png" alt="" width={100} height={100} />
@@ -50,7 +51,7 @@ const WorkSection = () => {
                 </p>
               </div>
             </div>
-            <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex max-w-[33%]">
+            <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex">
               <div className="w-full bg-[#2396be] h-auto px-[20px] py-[40px]">
                 <div className="text-center items-center justify-center flex w-full">
                   <Image src="/img-3.png" alt="" width={100} height={100} />

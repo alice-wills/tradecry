@@ -6,15 +6,15 @@ const FooterSection = () => {
     <>
     <div className="w-full float-left h-auto bg-[#2d2c2c] bg-[length:100%] p-[90px_0] ">
         <div className="container pr-[15px] pl-[15px] mr-auto ml-auto mb-6">
-           <div className="flex flex-wrap mr-[-15px] ml-[-15px]">
+           <div className="flex flex-wrap flex-col md:flex-row items-center lg:flex-row mr-[-15px] ml-[-15px]">
               <div className="flex-[0_0_25%] max-w-[25%] relative w-full min-h-[1px] pr-[15px] pl-[15px]">
                  <h3 className="w-full text-[24px] text-[#ffffff] mb-[15px] font-bold uppercase">Our Company</h3>
                  <div className="w-full float-left text-[#ffffff]">
                     <ul>
-                       <li><Link href="index.html">Home</Link></li>
+                       <li><Link href="/">Home</Link></li>
                        <li><Link href="#">About</Link></li>
-                       <li><Link href="services.html">Register</Link></li>
-                       <li><Link href="#">Login</Link></li>
+                       <li><Link href="/sign-up">Register</Link></li>
+                       <li><Link href="/sign-in">Login</Link></li>
                        
                        <li><Link href="contact.html">Contact</Link></li>
                     </ul>
@@ -28,7 +28,7 @@ const FooterSection = () => {
                        <li><Link href="#">Terms Of Services</Link></li>
                        <li><Link href="#">Privacy Policy</Link></li><Link href="#">
                        </Link><li><Link href="#"></Link><Link href="#">Register</Link></li>
-                       <li><Link href="#">Login</Link></li>
+                       <li><Link href="/sign-in">Login</Link></li>
                        
                     </ul>
                  </div>
