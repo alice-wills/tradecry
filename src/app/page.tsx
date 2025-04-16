@@ -9,7 +9,7 @@ import WorkSection from "@/components/service/WorkSection";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="overflow-x-hidden w-full">
       <HeadSection/>
       <ServiceSection/>
       <WorkSection/>
