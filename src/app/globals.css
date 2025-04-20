@@ -19,3 +19,22 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* globals.css or your CSS file */
+.swiper-pagination {
+  bottom: 0px !important;
+  position: relative !important;
+  margin-top: 2rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background: #333;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+  opacity: 1;
+}

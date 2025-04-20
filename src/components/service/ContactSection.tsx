@@ -2,49 +2,73 @@ import Image from "next/image"
 import Link from "next/link"
 
 const ContactSection = () => {
-  return (
-    <div className="w-full h-full float-left bg-[#2596be] px-[90px]" id="contact">
-         <div className="container pr-[15px] pl-[15px] mr-auto ml-auto mb-6">
-            <div className="flex flex-wrap mr-[-15px] ml-[-15px]">
-               <div className="flex-[0_0_100%] w-full max-w-[100%] min-h-[1px] pr-[15px] pl-[15px]">
-                  <h1 className="w-full float-left text-[40px] text-[#fefefd] font-bold uppercase">Contact Us</h1>
+   return (
+     <div className="w-full bg-[#2596be] px-6 md:px-12 lg:px-[90px] py-16" id="contact">
+       <div className="max-w-7xl mx-auto">
+         <h1 className="text-[32px] md:text-[40px] text-[#fefefd] font-bold uppercase mb-10">
+           Contact Us
+         </h1>
+         <div className="grid lg:grid-cols-3 gap-10">
+           {/* Form */}
+           <div className="lg:col-span-2">
+             <form>
+               <div className="grid md:grid-cols-2 gap-x-6 gap-y-4">
+                 <input
+                   type="text"
+                   className="w-full text-[16px] text-[#8b8b8b] bg-white px-4 py-4 rounded-[5px]"
+                   placeholder="Your Name"
+                   name="Your Name"
+                 />
+                 <input
+                   type="email"
+                   className="w-full text-[16px] text-[#8b8b8b] bg-white px-4 py-4 rounded-[5px]"
+                   placeholder="Email"
+                   name="Email"
+                 />
+                 <input
+                   type="tel"
+                   className="w-full text-[16px] text-[#8b8b8b] bg-white px-4 py-4 rounded-[5px]"
+                   placeholder="Phone Number"
+                   name="Phone Number"
+                 />
+                 <input
+                   type="text"
+                   className="w-full text-[16px] text-[#8b8b8b] bg-white px-4 py-4 rounded-[5px]"
+                   placeholder="Subject"
+                   name="Subject"
+                 />
                </div>
-            </div>
-            <div className="w-full float-left">
-               <div className="flex flex-wrap mr-[-15px] ml-[-15px]">
-                  <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex-[0_0_66.666%] max-w-[66.66%] ">
-                     <div className="w-full float-left">
-                        <form action="">
-                           <div className="flex flex-wrap mr-[-15px] ml-[-15px] pb-4">
-                              <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex-[0_0_50%] max-w-[50%]">
-                                 <input type="text" className="w-full float-left text-[16px] text-[#8b8b8b] bg-[#ffffff] px-[14px] py-[15px] mt-[20px] border-0 rounded-[5px]" placeholder="Your Name" name="Your Name"/>
-                              </div>
-                              <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex-[0_0_50%] max-w-[50%]">
-                                 <input type="text" className="w-full float-left text-[16px] text-[#8b8b8b] bg-[#ffffff] px-[14px] py-[15px] mt-[20px] border-0 rounded-[5px]" placeholder="Email" name="Email"/>
-                              </div>
-                              <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex-[0_0_50%] max-w-[50%]">
-                                 <input type="text" className="w-full float-left text-[16px] text-[#8b8b8b] bg-[#ffffff] px-[14px] py-[15px] mt-[20px] border-0 rounded-[5px]" placeholder="Phone Number" name="Phone Number"/>
-                              </div>
-                              <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex-[0_0_50%] max-w-[50%]">
-                                 <input type="text" className="w-full float-left text-[16px] text-[#8b8b8b] bg-[#ffffff] px-[14px] py-[15px] mt-[20px] border-0 rounded-[5px]" placeholder="Subject" name="Subject"/>
-                              </div>
-                           </div>
-                           <textarea className="text-[#8b8b8b] w-full h-[130px] text-[18px] bg-[#ffffff] pt-[40px] pr-[15px] pb-6 pl-[15px] border-0 rounded-[5px]" placeholder="Message" rows={5} id="comment" name="Message"></textarea>
-                           <div className="w-full float-left pt-[40px] pb-6">
-                              <div className="w-[220px] float-left"><Link className="w-full text-center text-[18px] text-[#fefefd] bg-[#252525] p-[10px] uppercase block font-bold rounded-[5px]" href="#">Send</Link></div>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-                  <div className="relative w-full min-h-[1px] pr-[15px] pl-[15px] flex-[0_0_33.333%] max-w-[33.333%]">
-                     <div className="mt-[20px] "><Image className="max-w-[100%] h-auto" alt=""  width={300} height={300} src="/coin-img.png"/></div>
-                  </div>
+               <textarea
+                 className="w-full h-[130px] text-[16px] text-[#8b8b8b] bg-white mt-4 p-4 rounded-[5px]"
+                 placeholder="Message"
+                 name="Message"
+                 rows={5}
+               ></textarea>
+               <div className="pt-6">
+                 <Link
+                   href="#"
+                   className="inline-block text-center text-[18px] text-white bg-[#252525] px-6 py-3 uppercase font-bold rounded-[5px]"
+                 >
+                   Send
+                 </Link>
                </div>
-
-            </div>
+             </form>
+           </div>
+ 
+           {/* Image */}
+           <div className="flex justify-center items-start">
+             <Image
+               src="/coin-img.png"
+               alt="Contact Illustration"
+               width={300}
+               height={300}
+               className="max-w-full h-auto"
+             />
+           </div>
          </div>
-      </div>
-  )
-}
+       </div>
+     </div>
+   );
+ };
 
 export default ContactSection
