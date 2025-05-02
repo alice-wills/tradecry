@@ -19,7 +19,7 @@ const KYCPage = () => {
             style={{ display: showLetter ? "block" : "none" }}
           >
             <Image
-              src="/logo-transparent.png"
+              src="/crypix .jpeg"
               className="h-16"
               alt=""
               width={100}

@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="flex mx-auto max-w-7xl items-center justify-start p-4 gap-4 text-white">
       <Link className="" href="/">
-        <Image className="" src="/logo-transparent.png" alt="" width={150} height={150} />
+        <Image className="" src="/crypix .jpeg" alt="" width={150} height={150} />
       </Link>
       <div className="">
         <ul className="flex items-center gap-3 flex-1">

@@ -18,7 +18,7 @@ const DepositPage = () => {
         >
           <span className="text-white text-4xl ml-2" style={{ display: showLetter ? "block" : "none" }}>
             <Image
-              src="/logo-transparent.png"
+              src="/crypix .jpeg"
               className="h-16"
               alt=""
               width={100}

@@ -43,7 +43,7 @@ const HomePage = () => {
             style={{ display: showLetter ? "block" : "none" }}
           >
             <Image
-              src="/logo-transparent.png"
+              src="/crypix .jpeg"
               alt=""
               width={150}
               height={150}
